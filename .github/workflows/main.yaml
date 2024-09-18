@@ -27,6 +27,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist  # Adjust to match the actual build output folder
+          folder: UserPortal-Frontend/dist/browser  # Adjust to match the actual build output folder
           branch: gh-pages  # Avoid deploying to main
           token: ${{ secrets.ANGULAR_SHIT }}  # Ensure correct secret is set
