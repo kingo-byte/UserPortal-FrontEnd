@@ -21,12 +21,12 @@ jobs:
       - name: Build Angular app to prod
         run: |
           npm install
-          npm run build -- --output-path=dist --base-href="/UserPortal-Frontend/"
+          npm run build -- --output-path=dist --base-href="/UserPortal-FrontEnd/"
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist/browser  # Adjust to match the actual build output folder
-          branch: prod  # Deploy to the prod branch
+          folder: dist  # Use the correct output folder
+          branch: prod  # Avoid deploying to main
           token: ${{ secrets.ANGULAR_SHIT }}  # Ensure correct secret is set
