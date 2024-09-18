@@ -19,9 +19,10 @@ jobs:
 
       # Build the Angular app with production settings
       - name: Build Angular app to prod
+        working-directory: github-UserPortal-FrontEnd
         run: |
           npm install
-          npm run build -- --output-path=dist --base-href="/UserPortal-Frontend/"
+          npm run build:prod
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
