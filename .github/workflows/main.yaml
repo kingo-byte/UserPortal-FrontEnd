@@ -26,4 +26,4 @@ jobs:
         with:
           folder: github-UserPortal-FrontEnd/dist/browser
           branch: main  
-          token: ${{ secrets.GITHUB_TOKEN }
+          token: ${{ secrets.ANGULAR_SHIT }
