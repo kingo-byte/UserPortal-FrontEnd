@@ -21,8 +21,8 @@ jobs:
       - name: Build Angular app to prod
         run: |
           npm install
-          npm run build -- --output-path=dist --base-href="/UserPortal-FrontEnd/"
-
+          npm install && npm run build:prod
+          
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
